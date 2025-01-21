@@ -4,18 +4,20 @@ import styles from './Planos.module.css';
 const Planos = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.cabecalho}>
-        <p>
-          Planos sobre medida
-          <br /> Feitos para <strong>você</strong>
-          <br /> ou <br />
-          <strong>Sua empresa!!!</strong>
-        </p>
-        <p>
-          Venha fazer parte dos nossos milhares de
-          <br />
-          <strong>clientes satisfeitos!!!</strong>
-        </p>
+      <div className={styles.bg}>
+        <div className={styles.cabecalho}>
+          <p>
+            Planos sobre medida
+            <br /> Feitos para <strong>você</strong>
+            <br /> ou <br />
+            <strong>Sua empresa!!!</strong>
+          </p>
+          <p>
+            Venha fazer parte dos nossos milhares de
+            <br />
+            <strong>clientes satisfeitos!!!</strong>
+          </p>
+        </div>
       </div>
       <div className="conheca">
         <h1>Conheça nossos planos</h1>
@@ -28,15 +30,16 @@ const Planos = () => {
             <li>Suporte 24hrs por dia de seg à sexta</li>
           </ul>
         </div>
-        <div>
-          <h3>PLANOS EMPRESARIAIS PERSONALIZADOS</h3>
-          <ul>
-            <li>Até 3 roteadores sem custo adicional</li>
-            <li>Consultoria especializada em TI e Redes</li>
-            <li>Planos anuais com desconto</li>
-            <li>Suporte 24hrs todos os dias</li>
-          </ul>
-        </div>
+      </div>
+
+      <div>
+        <h3>PLANOS EMPRESARIAIS PERSONALIZADOS</h3>
+        <ul>
+          <li>Até 3 roteadores sem custo adicional</li>
+          <li>Consultoria especializada em TI e Redes</li>
+          <li>Planos anuais com desconto</li>
+          <li>Suporte 24hrs todos os dias</li>
+        </ul>
       </div>
     </section>
   );

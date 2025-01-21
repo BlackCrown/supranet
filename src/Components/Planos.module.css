@@ -1,16 +1,23 @@
 .container{
   background-color: var(--color-BG-clear);
-  padding: 6rem 4rem;
+  /* padding: 12rem 4rem; */
+  padding-top: 14rem;
   text-align: center;
+}
+.bg{
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 .cabecalho{
   background: linear-gradient( rgba(0, 0, 75, 30%),rgba(0, 0, 75, 60%),rgba(0, 0, 75, 80%)50%, var(--color-BG-dark));
   max-width: 600px;
-  margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
   border-radius: 2rem;
+  margin: 0 auto;
+  margin-bottom: 14rem;
 }
 
 .cabecalho strong{
@@ -27,4 +34,22 @@
   background-color: var(--color-typo-dark);
   left: 46%;
   margin: 10px 0;
+}
+
+.cabecalho::before{
+  content: '';
+  display: block;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(rgba(222, 134, 70, .6) 59%, rgba(237, 226, 146, 40%) 63%, rgba(231, 110, 26, .9) 65% , rgba(237, 226, 146, .6) 70%);
+  border-radius: 50%;
+  position: absolute;
+  top: -70px;
+  margin: 0 auto;
+  margin-left: 75px;
+  z-index: -1;
+}
+
+.coheca{
+  margin-top: 10rem;
 }
