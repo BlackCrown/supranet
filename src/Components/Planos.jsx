@@ -20,9 +20,11 @@ const Planos = () => {
         </div>
       </div>
       <div className="conheca">
-        <h1>Conheça nossos planos</h1>
-        <div>
-          <h3>PLANOS COMERCIAIS A PARTIR DE R$80 MENSAIS</h3>
+        <h1 className={styles.planosTitulo}>Conheça nossos planos</h1>
+        <div className={styles.card}>
+          <h3 className={styles.cardTitulo}>
+            PLANOS COMERCIAIS A PARTIR DE R$80 MENSAIS
+          </h3>
           <ul>
             <li>Roteador de ultima geração</li>
             <li>Instalação em até 24 hrs</li>
@@ -32,8 +34,10 @@ const Planos = () => {
         </div>
       </div>
 
-      <div>
-        <h3>PLANOS EMPRESARIAIS PERSONALIZADOS</h3>
+      <div className={styles.card}>
+        <h3 className={styles.cardTitulo}>
+          PLANOS EMPRESARIAIS PERSONALIZADOS
+        </h3>
         <ul>
           <li>Até 3 roteadores sem custo adicional</li>
           <li>Consultoria especializada em TI e Redes</li>
