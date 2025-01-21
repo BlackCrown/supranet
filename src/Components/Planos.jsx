@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Planos.module.css';
+import Card from './Card/Card';
 
 const Planos = () => {
   return (
@@ -21,30 +22,32 @@ const Planos = () => {
       </div>
       <div className="conheca">
         <h1 className={styles.planosTitulo}>Conheça nossos planos</h1>
-        <div className={styles.card}>
-          <h3 className={styles.cardTitulo}>
-            PLANOS COMERCIAIS A PARTIR DE R$80 MENSAIS
-          </h3>
-          <ul>
-            <li>Roteador de ultima geração</li>
-            <li>Instalação em até 24 hrs</li>
-            <li>Primeira fatura após 30 dias</li>
-            <li>Suporte 24hrs por dia de seg à sexta</li>
-          </ul>
+        <div className={styles.planos}>
+          <Card
+            destaque=""
+            titulo="PLANOS COMERCIAIS  A PARTIR DE R$80 MENSAIS"
+            beneficios={[
+              'Roteador de última geração',
+              'Instalação em até 24 hrs',
+              'Primeira parcela após 30 dias',
+              'Suporte 24 hrs de seg à sab',
+            ]}
+          />
+
+          <Card
+            destaque="destaque"
+            titulo="PLANOS EMPRESARIAIS PERSONALIZADOS"
+            beneficios={[
+              'Até 3 roteadores sem custo adicional',
+              'Consultoria especializada em TI e Redes',
+              'Planos anuais com desconto',
+              'Suporte 24hrs todos os dias',
+            ]}
+          />
         </div>
       </div>
 
-      <div className={styles.card}>
-        <h3 className={styles.cardTitulo}>
-          PLANOS EMPRESARIAIS PERSONALIZADOS
-        </h3>
-        <ul>
-          <li>Até 3 roteadores sem custo adicional</li>
-          <li>Consultoria especializada em TI e Redes</li>
-          <li>Planos anuais com desconto</li>
-          <li>Suporte 24hrs todos os dias</li>
-        </ul>
-      </div>
+      <div className={styles.card}></div>
     </section>
   );
 };

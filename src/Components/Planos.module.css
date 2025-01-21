@@ -3,6 +3,7 @@
   /* padding: 12rem 4rem; */
   padding-top: 14rem;
   text-align: center;
+  height: 1800px; /* Remover propriedade posteriormente*/
 }
 .bg{
   position: relative;
@@ -50,6 +51,8 @@
   z-index: -1;
 }
 
-.coheca{
-  margin-top: 10rem;
+.planos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8rem;
 }

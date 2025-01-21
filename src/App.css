@@ -5,13 +5,11 @@
   --color-BG-clear-blue: #ADCAF6;
   --color-typo-clear: #E4E6F8;
   --color-typo-dark: #E76E1A;
+  background-color: var(--color-BG-clear);
 }
 
 * {
   box-sizing: border-box;
-}
-html{
-  background-color: var(--color-BG-clear);
 }
 body{
   margin: 0px;
