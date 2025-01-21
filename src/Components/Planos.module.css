@@ -1,0 +1,30 @@
+.container{
+  background-color: var(--color-BG-clear);
+  padding: 6rem 4rem;
+  text-align: center;
+}
+
+.cabecalho{
+  background: linear-gradient( rgba(0, 0, 75, 30%),rgba(0, 0, 75, 60%),rgba(0, 0, 75, 80%)50%, var(--color-BG-dark));
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  justify-content: center;
+  border-radius: 2rem;
+}
+
+.cabecalho strong{
+  color: var(--color-typo-dark);
+}
+
+.cabecalho p:first-child::after{
+  position: relative;
+  display: block;
+  content: '';
+  width: 40px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: var(--color-typo-dark);
+  left: 46%;
+  margin: 10px 0;
+}
