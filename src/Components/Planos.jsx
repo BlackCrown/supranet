@@ -24,7 +24,7 @@ const Planos = () => {
         <h1 className={styles.planosTitulo}>Conheça nossos planos</h1>
         <div className={styles.planos}>
           <Card
-            destaque=""
+            clas="card1"
             titulo="PLANOS COMERCIAIS  A PARTIR DE R$80 MENSAIS"
             beneficios={[
               'Roteador de última geração',
@@ -35,7 +35,7 @@ const Planos = () => {
           />
 
           <Card
-            destaque="destaque"
+            clas="card2"
             titulo="PLANOS EMPRESARIAIS PERSONALIZADOS"
             beneficios={[
               'Até 3 roteadores sem custo adicional',
@@ -46,8 +46,6 @@ const Planos = () => {
           />
         </div>
       </div>
-
-      <div className={styles.card}></div>
     </section>
   );
 };

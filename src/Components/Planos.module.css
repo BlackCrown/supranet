@@ -2,13 +2,18 @@
   background-color: var(--color-BG-clear);
   /* padding: 12rem 4rem; */
   padding-top: 14rem;
-  text-align: center;
-  height: 1800px; /* Remover propriedade posteriormente*/
+  justify-items: center;
+  background-image: url('../assets/bg_Planos.png');
+  background-size:fit;
+  background-position:bottom;
+  background-repeat:repeat-x;
+  min-height: 1300px;
 }
 .bg{
   position: relative;
   margin: 0 auto;
   z-index: 1;
+  
 }
 
 .cabecalho{
@@ -19,6 +24,7 @@
   border-radius: 2rem;
   margin: 0 auto;
   margin-bottom: 14rem;
+  text-align: center;
 }
 
 .cabecalho strong{
@@ -52,7 +58,12 @@
 }
 
 .planos{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 8rem;
+  position: relative;
+  width: 900px;
+}
+
+.planos >div:nth-child(2){
+  position: absolute;
+  top: 70%;
+  left: 400px;
 }
