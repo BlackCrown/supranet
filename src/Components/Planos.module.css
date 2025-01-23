@@ -1,6 +1,5 @@
 .container{
   background-color: var(--color-BG-clear);
-  /* padding: 12rem 4rem; */
   padding-top: 14rem;
   justify-items: center;
   background-image: url('../assets/bg_Planos.png');
@@ -55,6 +54,24 @@
   margin: 0 auto;
   margin-left: 75px;
   z-index: -1;
+}
+
+.planosTitulo{
+  position: relative;
+  font-family: 'Orelega one';
+  margin: 3rem 0;
+}
+
+.planosTitulo::before{
+  content: '';
+  width: 8px;
+  height: 16px;
+  background-color: var(--color-BG-clear-blue);
+  position: absolute;
+  display: inline-block;
+  left: -20px;
+  top: 8px;
+  border-radius: 4px;
 }
 
 .planos{
