@@ -3,9 +3,9 @@ import styles from './Empresa.module.css';
 
 const Empresa = () => {
   return (
-    <article className={styles.empresa}>
+    <article className={styles.SobreEmpresa}>
       <h1>Sobre a nossa Empresa</h1>
-      <section>
+      <section className={styles.comercial}>
         <p>
           <strong>SupraNet</strong> é uma <strong>empresa</strong> de internet
           dedicada a fornecer soluções de conectividade de
@@ -19,7 +19,7 @@ const Empresa = () => {
           tamanhos, desde startups até grandes corporações.
         </p>
       </section>
-      <section>
+      <section className={styles.empresarial}>
         <p>
           Nossa missão é <strong>conectar negócios</strong> ao mundo digital de
           maneira eficaz e econômica, proporcionando uma experiência de
