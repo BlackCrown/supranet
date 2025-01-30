@@ -1,0 +1,41 @@
+.header{
+  background-color: var(--color-BG-dark);
+  width: 100%;
+  z-index: 100;
+  overflow: hidden;
+  top: 0;
+  border-radius: 0 0 30px 30px;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav ul{
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+  height: 100%;
+}
+
+.nav ul li{
+  padding: .2rem .6rem;
+}
+
+.btnContratar{
+  background-color: var(--color-BG-clear-blue);
+  border: 1px solid var(--color-typo-dark);
+  border-radius: 20px;
+  box-shadow: inset 4px 4px 4px 0 rgba(25, 25, 60, 80%);
+}
+
+.btnContratar a{
+  color: var(--color-typo-dark);
+  font-weight: 500;
+}
+
+

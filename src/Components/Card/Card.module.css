@@ -1,0 +1,41 @@
+img{
+  padding-left: 10px;
+}
+
+.container{
+  background-color: #E5B999;
+  max-width: 500px;
+  border-radius: 40px;
+  padding: 1rem 2.5rem;
+  box-shadow: 12px 15px 25px 3px rgba(85, 46, 17, 100%);
+}
+
+.cardTitulo{
+  font-family: 'Orelega One';
+  font-size: 1.8rem;
+  color: var(--color-typo-clear);
+  -webkit-text-stroke: 1.4px #8B6A53;
+  text-stroke: 1px #8B6A53;
+}
+
+.vantagens{
+  margin-top: 1rem;
+}
+
+.beneficio{
+  display: flex;
+  gap: 1.3rem;
+  margin-bottom: 1.3rem;
+  align-items: start;
+}
+
+.beneficio li{
+  font-family: 'Orelega One';
+  line-height: 1.8ch;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: var(--color-BG-dark);
+  -webkit-text-stroke: .3px var(--color-typo-clear);
+  text-stroke: .5px var(--color-typo-clear);
+  text-align: start;
+}

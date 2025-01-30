@@ -1,0 +1,90 @@
+.container{
+  background-color: var(--color-BG-clear);
+  padding-top: 14rem;
+  justify-items: center;
+  background-image: url('../assets/bg_Planos.png');
+  background-size:fit;
+  background-position:bottom;
+  background-repeat:repeat-x;
+  min-height: 1300px;
+}
+.bg{
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+  
+}
+
+.cabecalho{
+  background: linear-gradient( rgba(0, 0, 75, 30%),rgba(0, 0, 75, 60%),rgba(0, 0, 75, 80%)50%, var(--color-BG-dark));
+  max-width: 600px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  border-radius: 2rem;
+  margin: 0 auto;
+  margin-bottom: 14rem;
+  text-align: center;
+}
+
+.cabecalho strong{
+  color: var(--color-typo-dark);
+}
+
+.cabecalho p:first-child::after{
+  position: relative;
+  display: block;
+  content: '';
+  width: 40px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: var(--color-typo-dark);
+  left: 46%;
+  margin: 10px 0;
+}
+
+.cabecalho::before{
+  content: '';
+  display: block;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(rgba(222, 134, 70, .6) 59%, rgba(237, 226, 146, 40%) 63%, rgba(231, 110, 26, .9) 65% , rgba(237, 226, 146, .6) 70%);
+  border-radius: 50%;
+  position: absolute;
+  top: -70px;
+  margin: 0 auto;
+  margin-left: 75px;
+  z-index: -1;
+}
+
+.planosTitulo{
+  font-family: 'Orelega one';
+  -webkit-text-stroke: 1px var(--color-BG-dark);
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  text-stroke: 1px #8B6A53;
+  margin: 3rem 0;
+}
+
+.planosTitulo::before{
+  content: '';
+  width: 10px;
+  height: 20px;
+  background-color: var(--color-BG-clear-blue);
+  margin-right: 20px;
+  display: inline-block;
+  justify-self: flex-start;
+  border-radius: 6px;
+  border: 1px solid var(--color-BG-dark)
+}
+
+.planos{
+  position: relative;
+  width: 900px;
+}
+
+.planos >div:nth-child(2){
+  position: absolute;
+  top: 70%;
+  left: 400px;
+}
