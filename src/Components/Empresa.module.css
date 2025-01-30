@@ -1,6 +1,7 @@
 .SobreEmpresa{
   color: black;
   margin-top: 8rem;
+  padding: 2rem 4rem;
 }
 
 .SobreEmpresa strong{
@@ -9,17 +10,76 @@
   text-stroke: .4px var(--color-typo-clear);
 }
 
+.corpo{
+  display: grid;
+  grid-template-areas: 
+  'comercial comercial .'
+  '. empresarial empresarial';
+  margin-top: 4rem;
+  row-gap: 6rem;
+  padding: 6rem;
+}
+
 .SobreEmpresa p{
   color: var(--color-BG-dark);
   font-family: 'Orelega One';
   font-size: 1.4rem;
   font-weight: 900;
+
 }
 
 .comercial{
+max-width: 700px;
+display: grid;
+grid-area: comercial;
+grid-template-areas: 
+  'txt1 txt1 .'
+  'txt2 txt2 txt2';
+  position: relative;
+  z-index: 2;
+}
 
+.bgImgComercial::before{
+  content: '';
+  width: 490px;
+  height: 471px;
+  top: -160px;
+  left: -120px;
+  background-image: url('../assets/bg_comercial.png');
+  background-position: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
+
+.comercial::before{
+  content: '';
+  width: 280px;
+  height: 280px;
+  border-radius: 50px;
+  background-color: rgba(154, 191, 247, 47%);
+  box-shadow: 6px 11px 4px 0;
+  filter: blur(2px);
+  z-index: -1;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -3rem;
+  left: -2rem;
+}
+
+.comercial .txt1{
+  grid-area: txt1;
+}
+
+.comercial .txt2{
+  grid-area: txt2;
+  margin-left: 8rem;
 }
 
 .empresarial{
-
+  grid-area: empresarial;
+  max-width: 600px;
+  justify-self: center;
+  transform: rotate(-25deg);
 }
