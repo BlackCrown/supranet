@@ -3,16 +3,29 @@
   padding-top: 14rem;
   justify-items: center;
   background-image: url('../assets/bg_Planos.png');
-  background-size:fit;
+  background-size:contain;
   background-position:bottom;
   background-repeat:repeat-x;
   min-height: 1300px;
+  top: 0;
+  bottom: 0;
+  padding: 80px;
+  position: relative;
+}
+.container::after{
+  content: '';
+  min-width: 1400px;
+  border-bottom: 4px dotted white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: -50%;
+  transform: translate(-50%, -50%);
 }
 .bg{
   position: relative;
   margin: 0 auto;
   z-index: 1;
-  
 }
 
 .cabecalho{
