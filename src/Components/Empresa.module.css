@@ -7,7 +7,7 @@
 .SobreEmpresa strong{
   color: var(--color-typo-dark);
   -webkit-text-stroke: .3px var(--color-typo-clear);
-  text-stroke: .4px var(--color-typo-clear);
+  text-stroke: .3px var(--color-typo-clear);
 }
 
 .corpo{
@@ -18,6 +18,42 @@
   margin-top: 4rem;
   row-gap: 6rem;
   padding: 6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.corpo::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/bg_sobreEmpresa.png');
+  background-position: start;
+  background-size: fill;
+  background-repeat: repeat-y;
+  position: absolute;
+  top: -76px;
+  left: -64px;
+  right: 64px;
+  bottom: 76px;
+  opacity: 70%;
+}
+
+.corpo::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+  background-image: url('../assets/bg_sobreEmpresa.png');
+  background-position: end;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -26px;
+  left: 64px;
+  right: 64px;
+  bottom: 76px;
+  opacity: 40%;
+  z-index: -1;
 }
 
 .SobreEmpresa p{
@@ -58,7 +94,7 @@ grid-template-areas:
   width: 280px;
   height: 280px;
   border-radius: 50px;
-  background-color: rgba(154, 191, 247, 47%);
+  background-color: rgba(154, 191, 247, 87%);
   box-shadow: 6px 11px 4px 0;
   filter: blur(2px);
   z-index: -1;
@@ -79,7 +115,46 @@ grid-template-areas:
 
 .empresarial{
   grid-area: empresarial;
-  max-width: 600px;
-  justify-self: center;
+  max-width: 500px;
+  justify-self: end;
   transform: rotate(-25deg);
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.empresarial p strong{
+  color: rgba(255, 244, 215, 0%);
+  -webkit-text-stroke: 1px rgba(255, 110, 26, 100%);
+  text-stroke: 1 var(--color-typo-clear);
+  font-size: 1.4rem;
+  margin: 0 4px;
+}
+
+.empresarial::before{
+  content: '';
+  position:absolute;
+  width: 110%;
+  height: 120%;
+  top: -2rem;
+  left: -3rem;
+  background-color: rgba(154, 191, 247, 87%);
+  padding: 1rem;
+  border-radius: 40px;
+  box-shadow: 6px 11px 4px 0;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.bgImgEmpresarial{
+  width: 386px;
+  height: 387px;
+  top: -98%;
+  left: 20px;
+  background-image: url('../assets/SupraNet.png');
+  background-position: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -2;
 }

@@ -21,7 +21,8 @@ const Empresa = () => {
             tamanhos, desde startups até grandes corporações.
           </p>
         </section>
-        <section className={styles.empresarial}>
+        <section className={`${styles.empresarial} ${styles.bgEmpresarial}`}>
+          <span className={styles.bgImgEmpresarial} />
           <p>
             Nossa missão é <strong>conectar negócios</strong> ao mundo digital
             de maneira eficaz e econômica, proporcionando uma experiência de
