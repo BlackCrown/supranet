@@ -5,7 +5,7 @@ const Empresa = () => {
   return (
     <div className={styles.BGSobreEmpresa}>
       <article className={styles.SobreEmpresa}>
-        <h1>Sobre a nossa Empresa</h1>
+        <h1 className="Titulo">Sobre a nossa Empresa</h1>
         <div className={styles.corpo}>
           <section className={styles.comercial}>
             <span className={styles.bgImgComercial} />

@@ -37,7 +37,6 @@
 
 
 .SobreEmpresa{
-  color: black;
   padding: 2rem 0;
   max-width: 1400px;
   justify-self: center;
@@ -66,7 +65,6 @@
   font-family: 'Orelega One';
   font-size: 1.4rem;
   font-weight: 900;
-
 }
 
 .comercial{
@@ -100,7 +98,7 @@ grid-template-areas:
   height: 280px;
   border-radius: 50px;
   background-color: rgba(154, 191, 247, 87%);
-  box-shadow: 6px 11px 4px 0;
+  box-shadow: rgba(0, 0, 0, 40%) 6px 11px 4px 0;
   filter: blur(2px);
   z-index: -1;
   position: absolute;
@@ -146,7 +144,7 @@ grid-template-areas:
   background-color: rgba(154, 191, 247, 87%);
   padding: 1rem;
   border-radius: 40px;
-  box-shadow: 6px 11px 4px 0;
+  box-shadow:rgba(0, 0, 0, 50%) 6px 11px 4px 0;
   filter: blur(4px);
   z-index: -1;
 }

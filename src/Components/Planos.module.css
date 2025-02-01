@@ -14,7 +14,8 @@
 }
 .container::after{
   content: '';
-  min-width: 1400px;
+  max-width: 1400px;
+  min-width: 100%;
   border-bottom: 4px dotted white;
   position: absolute;
   top: 50%;
@@ -67,28 +68,6 @@
   margin: 0 auto;
   margin-left: 75px;
   z-index: -1;
-}
-
-.planosTitulo{
-  font-family: 'Orelega one';
-  -webkit-text-stroke: 1px var(--color-BG-dark);
-  font-size: 2.4rem;
-  display: flex;
-  align-items: center;
-  text-stroke: 1px #8B6A53;
-  margin: 3rem 0;
-}
-
-.planosTitulo::before{
-  content: '';
-  width: 10px;
-  height: 20px;
-  background-color: var(--color-BG-clear-blue);
-  margin-right: 20px;
-  display: inline-block;
-  justify-self: flex-start;
-  border-radius: 6px;
-  border: 1px solid var(--color-BG-dark)
 }
 
 .planos{
