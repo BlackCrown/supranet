@@ -3,16 +3,30 @@
   padding-top: 14rem;
   justify-items: center;
   background-image: url('../assets/bg_Planos.png');
-  background-size:fit;
+  background-size:contain;
   background-position:bottom;
   background-repeat:repeat-x;
   min-height: 1300px;
+  top: 0;
+  bottom: 0;
+  padding: 80px;
+  position: relative;
+}
+.container::after{
+  content: '';
+  max-width: 1400px;
+  min-width: 100%;
+  border-bottom: 4px dotted white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: -50%;
+  transform: translate(-50%, -50%);
 }
 .bg{
   position: relative;
   margin: 0 auto;
   z-index: 1;
-  
 }
 
 .cabecalho{
@@ -54,28 +68,6 @@
   margin: 0 auto;
   margin-left: 75px;
   z-index: -1;
-}
-
-.planosTitulo{
-  font-family: 'Orelega one';
-  -webkit-text-stroke: 1px var(--color-BG-dark);
-  font-size: 2.4rem;
-  display: flex;
-  align-items: center;
-  text-stroke: 1px #8B6A53;
-  margin: 3rem 0;
-}
-
-.planosTitulo::before{
-  content: '';
-  width: 10px;
-  height: 20px;
-  background-color: var(--color-BG-clear-blue);
-  margin-right: 20px;
-  display: inline-block;
-  justify-self: flex-start;
-  border-radius: 6px;
-  border: 1px solid var(--color-BG-dark)
 }
 
 .planos{

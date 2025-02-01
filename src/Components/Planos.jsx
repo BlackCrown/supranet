@@ -21,7 +21,7 @@ const Planos = () => {
         </div>
       </div>
       <div className="conheca">
-        <h1 className={styles.planosTitulo}>Conheça nossos planos</h1>
+        <h1 className="Titulo">Conheça nossos planos</h1>
         <div className={styles.planos}>
           <Card
             clas="card1"

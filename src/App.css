@@ -18,7 +18,6 @@ body{
   --type-first: 'MuseoModerno', Arial, sans-serif;
   --type-second: 'Spectral', georgia;
   font-family: var(--type-first);
-  margin-bottom: 900px;
 }
 
 h1, h2, h3, h4, p{
@@ -39,6 +38,29 @@ a{
 img {
   display: block;
   max-width: 100%;
+}
+
+
+.Titulo{
+  font-family: 'Orelega one';
+  -webkit-text-stroke: 1px var(--color-BG-dark);
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  text-stroke: 1px #8B6A53;
+  margin: 3rem 0;
+}
+
+.Titulo::before{
+  content: '';
+  width: 10px;
+  height: 20px;
+  background-color: var(--color-BG-clear-blue);
+  margin-right: 20px;
+  display: inline-block;
+  justify-self: flex-start;
+  border-radius: 6px;
+  border: 1px solid var(--color-BG-dark)
 }
 
 @keyframes logo-spin {

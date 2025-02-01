@@ -1,3 +1,163 @@
-.empresa{
-  background-color: var(--color-BG-clear);
+.BGSobreEmpresa{
+  position: relative;
+  z-index: 1;
+}
+
+.BGSobreEmpresa::before{
+  content: '';
+  width: 50%;
+  height: 100%;
+  background-image: url('../assets/bg_sobreEmpresa.png');
+  background-position: start;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 70%;
+  z-index: -1;
+}
+
+.BGSobreEmpresa::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+  background-image: url('../assets/bg_sobreEmpresa.png');
+  background-position: top left;
+  background-size: contain;
+  background-repeat: repeat-x;
+  position: absolute;
+  opacity: 40%;
+  top: 0;
+  /* right: -600px; */
+  bottom: 0;
+  z-index: -1;
+}
+
+
+.SobreEmpresa{
+  padding: 2rem 0;
+  max-width: 1400px;
+  justify-self: center;
+}
+
+.SobreEmpresa strong{
+  color: var(--color-typo-dark);
+  -webkit-text-stroke: .3px var(--color-typo-clear);
+  text-stroke: .3px var(--color-typo-clear);
+}
+
+.corpo{
+  display: grid;
+  grid-template-areas: 
+  'comercial comercial .'
+  '. empresarial empresarial';
+  margin-top: 4rem;
+  row-gap: 6rem;
+  padding: 6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.SobreEmpresa p{
+  color: var(--color-BG-dark);
+  font-family: 'Orelega One';
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.comercial{
+max-width: 700px;
+display: grid;
+grid-area: comercial;
+grid-template-areas: 
+  'txt1 txt1 .'
+  'txt2 txt2 txt2';
+  position: relative;
+  z-index: 2;
+}
+
+.bgImgComercial::before{
+  content: '';
+  width: 490px;
+  height: 471px;
+  top: -160px;
+  left: -120px;
+  background-image: url('../assets/bg_comercial.png');
+  background-position: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
+
+.comercial::before{
+  content: '';
+  width: 280px;
+  height: 280px;
+  border-radius: 50px;
+  background-color: rgba(154, 191, 247, 87%);
+  box-shadow: rgba(0, 0, 0, 40%) 6px 11px 4px 0;
+  filter: blur(2px);
+  z-index: -1;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -3rem;
+  left: -2rem;
+}
+
+.comercial .txt1{
+  grid-area: txt1;
+}
+
+.comercial .txt2{
+  grid-area: txt2;
+  margin-left: 8rem;
+}
+
+.empresarial{
+  grid-area: empresarial;
+  max-width: 500px;
+  justify-self: end;
+  transform: rotate(-25deg);
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.empresarial p strong{
+  color: rgba(255, 244, 215, 0%);
+  -webkit-text-stroke: 1px rgba(255, 110, 26, 100%);
+  text-stroke: 1 var(--color-typo-clear);
+  font-size: 1.4rem;
+  margin: 0 4px;
+}
+
+.empresarial::before{
+  content: '';
+  position:absolute;
+  width: 110%;
+  height: 120%;
+  top: -2rem;
+  left: -3rem;
+  background-color: rgba(154, 191, 247, 87%);
+  padding: 1rem;
+  border-radius: 40px;
+  box-shadow:rgba(0, 0, 0, 50%) 6px 11px 4px 0;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.bgImgEmpresarial{
+  width: 386px;
+  height: 387px;
+  top: -98%;
+  left: 20px;
+  background-image: url('../assets/SupraNet.png');
+  background-position: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -2;
 }
