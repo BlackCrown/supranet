@@ -3,8 +3,8 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <div className={styles.main}>
-      <div>
+    <div className={styles.footer}>
+      <div className={styles.menuFooter}>
         <h1 className="Titulo">Menu</h1>
         <nav>
           <ul>
