@@ -10,8 +10,12 @@
 
 .menuFooter{
   border: 2px solid var(--color-typo-dark);
-  background-color: rgba(0, 0, 75, 90%);
+  background-color: rgba(0, 0, 75, 87%);
   padding: 0 4rem 4rem;
+  background-image: url('../assets/bg_menu.png');
+  background-blend-mode: multiply;
+  background-repeat: round;
+  background-position: left;
 }
 
 .menuFooter h1{
@@ -48,10 +52,11 @@
 .dados{
   height: 400px;
     border: 2px solid var(--color-typo-dark);
-    background-color: rgba(0, 0, 75, 90%);
+    background-color: rgba(0, 0, 75, 86%);
     padding: 0rem 4rem;
     place-content: center;
-
+    background-image: url('../assets/bg_form.png');
+    background-blend-mode: screen;
 }
 
 .contatoFooter h1{
@@ -71,10 +76,17 @@
   margin-right: 10px;
 }
 
+.formulario input{
+  background-color: #C4C8EC;
+  border: solid 3px #052061;
+  border-radius: 4px;
+}
+
 .full{
   grid-column: span  2;
 }
 
 .full input{
   width: 100%;
+
 }
