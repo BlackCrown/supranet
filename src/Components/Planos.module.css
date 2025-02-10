@@ -80,3 +80,18 @@
   top: 70%;
   left: 400px;
 }
+
+@media(max-width: 720px){
+
+  .planos{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 900px
+  }
+  .planos >div:nth-child(2){
+    position: relative;
+    top: 0;
+  left: 0;
+  }
+}

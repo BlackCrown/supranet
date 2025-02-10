@@ -161,3 +161,30 @@ grid-template-areas:
   position: absolute;
   z-index: -2;
 }
+
+@media(max-width: 720px){
+  .corpo{
+    display: grid;
+    grid-template-areas: 
+    'comercial comercial'
+    'empresarial empresarial';
+  }
+
+  .comercial{
+    margin-bottom: 40px;
+  }
+
+  .comercial .txt2{
+    grid-area: txt2;
+    margin-left: 4rem;
+  }
+
+
+  .empresarial{
+    grid-area: empresarial;
+    justify-self: center;
+    transform: rotate(-25deg);
+    text-align: center;
+    margin-top: 6rem;
+  }
+}
