@@ -74,6 +74,7 @@
 
 .formulario label{
   margin-right: 10px;
+  display: block;
 }
 
 .formulario input{
@@ -88,5 +89,18 @@
 
 .full input{
   width: 100%;
+}
 
+@media(max-width: 720px){
+  .footer{
+    grid-template-columns: 1fr;
+  }
+
+  .contatoFooter{
+    border-top: none;
+  }
+
+  .formulario input{
+    height: 36px;
+  }
 }
